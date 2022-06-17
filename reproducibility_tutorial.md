@@ -16,6 +16,8 @@ pip3 install -r requirements.txt
 This paper involves training models on seven different radiological image datasets. Here we detail how to set up these datasets for further experiments.
 
 #### BraTS
+1. Download Brats2018 dataset from https://www.med.upenn.edu/sbia/brats2018/data.html.
+2. Use readimg_brats.ipynb code to read .nii files and to transform them as normalized png images. 
 
 #### CheXpert
 
@@ -50,6 +52,18 @@ This paper involves training models on seven different radiological image datase
 2. That's it; due to MURA's relatively smaller size, we don't need to create a subset.
 
 #### OAI
+1. Go to website [https://nda.nih.gov/oai/accessing_images.html](https://nda.nih.gov/oai/accessing_images.html), if you don’t have an account, you need to create a NIMH data archive account first ([https://nda.nih.gov/oai/query-download.html](https://nda.nih.gov/oai/query-download.html)).
+2. If you want to download images from OAI, you need to request the OAI data permission. You can find this in your account menu.
+3. Once you get the permission, you could use OAI image dashboard to choose the target packages out [https://nda.nih.gov/oai/accessing_images.html](https://nda.nih.gov/oai/accessing_images.html). We chose the OAIBaselineImages which contains 0.E.1 and 0.C.2 subsets. Labels under kxr_sq_bu00.txt, we use script generate_cls_label.ipynb to obtain KL score annotations, to get a binary classification dataset, we combine labels 0-1 as non-OA class, and labels 2-4 as OA class. To to noticed, images which miss labels in  kxr_sq_bu00.txt are skipped. 
+4. Once you get the DICOM images. you could use the script kl_process.py under folder /detect_knee to which helps you detect the left and right knee, and crop each knee out and save the cropped images under —save-folder. 
+
+%% the detect knee scripts referred from https://github.com/mazurowski-lab/osteoarthritis-classification. 
+
+```python
+python kl_process.py --save-folder.
+```
+
+Then you will get exactly our data folder /save_folder/0 for class label 0 and /save_folder/1 for class label 1.
 
 #### Prostate-MRI
 
