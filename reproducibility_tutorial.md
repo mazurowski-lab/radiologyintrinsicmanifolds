@@ -57,7 +57,7 @@ This paper involves training models on seven different radiological image datase
 3. Once you get the permission, you could use OAI image dashboard to choose the target packages out [https://nda.nih.gov/oai/accessing_images.html](https://nda.nih.gov/oai/accessing_images.html). We chose the OAIBaselineImages which contains 0.E.1 and 0.C.2 subsets. Labels under kxr_sq_bu00.txt, we use script generate_cls_label.ipynb to obtain KL score annotations, to get a binary classification dataset, we combine labels 0-1 as non-OA class, and labels 2-4 as OA class. To to noticed, images which miss labels in  kxr_sq_bu00.txt are skipped. 
 4. Once you get the DICOM images. you could use the script kl_process.py under folder /detect_knee to which helps you detect the left and right knee, and crop each knee out and save the cropped images under —save-folder. 
 
-%% the detect knee scripts referred from https://github.com/mazurowski-lab/osteoarthritis-classification. 
+%% the detect knee scripts referred from https://github.com/mazurowski-lab/osteoarthritis-classification. You need to download the model_files/ best_finalversion.pt there and put it under /detect_knees/model_files here.
 
 ```python
 python kl_process.py --save-folder.
