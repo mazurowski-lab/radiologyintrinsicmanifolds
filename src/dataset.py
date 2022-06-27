@@ -101,8 +101,6 @@ class MedicalDataset(Dataset):
             im = Image.open(fpath)
             im = im.resize((targetsize, targetsize), Image.BILINEAR)
             im.save(fpath)
-            # print(fpath)
-            # print('saved {}.'.format(fpath))
 
 # individual datasets                   
 class CheXpertDataset(MedicalDataset):
@@ -237,8 +235,6 @@ class RSNADataset(MedicalDataset):
         label_df = label_df[label_df['ID'].str.contains(labeling)] 
         # get rid of irrelevant labels
         
-        # display(label_df)
-        
         labels = [] 
         # (fname, value = label (0 = neg, 1 = pos) )
         print('building RSNA dataset')
@@ -253,7 +249,6 @@ class RSNADataset(MedicalDataset):
             labels.append((fpath, target))
             
         self.labels = labels
-        # print(self.labels)
         
 
 class ProstateMRIDataset(MedicalDataset):
@@ -332,7 +327,6 @@ def get_datasets(dataset_name, labeling='default', subset_size=None, train_frac=
         neg_ct = 0
         class_size = subset_size//2
         new_labels = []
-        # print(len(dataset.labels))
         for idx, label in enumerate(dataset.labels):
             if label[1] == 1 and pos_ct < class_size:
                 new_labels.append(label)
@@ -341,8 +335,6 @@ def get_datasets(dataset_name, labeling='default', subset_size=None, train_frac=
                 new_labels.append(label)
                 neg_ct += 1
                 
-        # print(new_labels)
-        # print(len(new_labels))
         assert len(new_labels) == subset_size
         dataset.labels = new_labels
         print('{} positive examples, {} negative examples.'.format(pos_ct, neg_ct))
@@ -355,20 +347,8 @@ def get_datasets(dataset_name, labeling='default', subset_size=None, train_frac=
         else:
             train_size = len(dataset) - test_size 
 
-        # print(train_size, test_size)
         train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size], generator=torch.Generator().manual_seed(1337))
-        
-#         train_dataset = MedicalDataset(train_transform)
-#         val_dataset = MedicalDataset(val_transform)
-#         indices = list(range(len(dataset.labels)))
-#         # print(indices)
-#         train_indices, test_indices = train_test_split(indices, train_size=train_frac)
-#         train_dataset = torch.utils.data.Subset(dataset, train_indices)
-#         test_dataset = torch.utils.data.Subset(dataset, test_indices)
-        
-#         train_dataset.transform = train_transform
         
         return train_dataset, test_dataset
     else:
-        # dataset.train_transform = train_transform
         return dataset
