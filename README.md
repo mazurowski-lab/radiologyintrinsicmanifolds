@@ -22,4 +22,12 @@ A future endeavor is to determine the theoretical reasons for all of these findi
 Please follow the steps outlined in `reproducibility_tutorial.md` in order to reproduce the results of the paper.
 
 ## Citation
-*forthcoming*
+Please cite the paper if you use or reference it in your work:
+```bib
+@article{konz2022intrinsic,
+  title={The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning},
+  author={Konz, Nicholas and Gu, Hanxue and Dong, Haoyu and Mazurowski, Maciej A},
+  journal={arXiv preprint arXiv:2207.02797},
+  year={2022}
+}
+```
