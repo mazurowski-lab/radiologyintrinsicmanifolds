@@ -10,6 +10,10 @@ See the paper here:
 - arXiv preprint version (open access): https://arxiv.org/abs/2207.02797
 - published version: https://link.springer.com/chapter/10.1007/978-3-031-16452-1_65
 
+Related resources:
+- [MICCAI 2022 poster](https://github.com/nickk124/MICCAI22_poster/blob/52c75fb93369b5c43f4aedfd5e73131a082e1657/poster.pdf)
+- My related talk from The Pacific Northwest Seminar on Topology, Algebra, and Geometry in Data Science (TAG-DS): [slides here](https://nickk124.github.io/files/intrinsic_manifolds_TAG-DS_talk.pdf)
+
 ## Main Findings
 
 1. Natural image datasets generally have higher intrinsic dimension than radiology datasets:
