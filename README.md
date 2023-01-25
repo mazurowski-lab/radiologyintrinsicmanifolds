@@ -1,5 +1,6 @@
-# Code for MICCAI 2022 paper "The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning"
+# Code: Intrinsic Dimensions of Radiology Images
 ## by Nicholas Konz, Hanxue Gu, Haoyu Dong and Maciej Mazurowski
+### For *The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning* (MICCAI 2022)
 
 ![Example images from our explored datasets.](figures/data_eg_1row.png)
 
