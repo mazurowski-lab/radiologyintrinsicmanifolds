@@ -15,7 +15,7 @@ You can use our code to:
 Please follow the steps outlined in `reproducibility_tutorial.md` in order to reproduce the results of the paper.
 
 
-#### Citation
+## Citation
 Please cite our paper if you use the code or reference our work:
 ```bib
 @inproceedings{konz2022intrinsic,
