@@ -1,10 +1,32 @@
-# Code: Intrinsic Dimensions of Radiology Images
+# Code: Intrinsic Dimensions of Medical Images
 ## by Nicholas Konz, Hanxue Gu, Haoyu Dong and Maciej Mazurowski
 ### For *The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning* (MICCAI 2022)
+https://arxiv.org/abs/2207.02797
 
 ![Example images from our explored datasets.](figures/data_eg_1row.png)
 
-### Paper Abstract
+## Code Usage/ Reproducing the Results
+You can use our code to:
+1. Compute the intrinsic dimension (ID) of medical image datasets (Paper Section 4.1) and
+2. Evaluate neural network generalization ability vs. dataset intrinsic Dimension (Paper Section 4.2).
+
+Please follow the steps outlined in `reproducibility_tutorial.md` in order to reproduce the results of the paper.
+
+
+#### Citation
+Please cite our paper if you use the code or reference our work:
+```bib
+@inproceedings{konz2022intrinsic,
+  title={The Intrinsic Manifolds of Radiological Images and Their Role in Deep Learning},
+  author={Konz, Nicholas and Gu, Hanxue and Dong, Haoyu and Mazurowski, Maciej},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={684--694},
+  year={2022},
+  organization={Springer}
+}
+```
+
+## Paper Abstract
 The manifold hypothesis is a core mechanism behind the success of deep learning, so understanding the intrinsic manifold structure of image data is central to studying how neural networks learn from the data. Intrinsic dataset manifolds and their relationship to learning difficulty have recently begun to be studied for the common domain of natural images, but little such research has been attempted for radiological images. We address this here. First, we compare the intrinsic manifold dimensionality of radiological and natural images. We also investigate the relationship between intrinsic dimensionality and generalization ability over a wide range of datasets. Our analysis shows that natural image datasets generally have a higher number of intrinsic dimensions than radiological images. However, the relationship between generalization ability and intrinsic dimensionality is much stronger for medical images, which could be explained as radiological images having intrinsic features that are more difficult to learn. These results give a more principled underpinning for the intuition that radiological images can be more challenging to apply deep learning to than natural image datasets common to machine learning research.  We believe rather than directly applying models developed for natural images to the radiological imaging domain, more care should be taken to developing architectures and algorithms that are more tailored to the specific characteristics of this domain. The research shown in our paper, demonstrating these characteristics and the differences from natural images, is an important first step in this direction.
 
 See the paper here:
@@ -24,19 +46,3 @@ Related resources:
 ![Difference in generalization ability vs. dataset intrinsic dimension between natural and radiological images.](figures/main_fig_multi_0.png)
 
 A future endeavor is to determine the theoretical reasons for all of these findings.
-
-## Reproducing the Results
-Please follow the steps outlined in `reproducibility_tutorial.md` in order to reproduce the results of the paper.
-
-## Citation
-Please cite the paper if you use or reference it in your work:
-```bib
-@inproceedings{konz2022intrinsic,
-  title={The Intrinsic Manifolds of Radiological Images and Their Role in Deep Learning},
-  author={Konz, Nicholas and Gu, Hanxue and Dong, Haoyu and Mazurowski, Maciej},
-  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
-  pages={684--694},
-  year={2022},
-  organization={Springer}
-}
-```
