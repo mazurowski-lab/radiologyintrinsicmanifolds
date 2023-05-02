@@ -1,4 +1,4 @@
-# Code: Intrinsic Dimensions of Medical Images
+# Intrinsic Dimensions of Medical Images
 #### By [Nicholas Konz](https://nickk124.github.io/), Hanxue Gu, Haoyu Dong and [Maciej Mazurowski](https://sites.duke.edu/mazurowski/).
 
 [![arXiv Paper](https://img.shields.io/badge/arXiv-2207.02797-orange.svg?style=flat)](https://arxiv.org/abs/2207.02797)
