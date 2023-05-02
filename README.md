@@ -1,6 +1,8 @@
 # Code: Intrinsic Dimensions of Medical Images
 ## by Nicholas Konz, Hanxue Gu, Haoyu Dong and Maciej Mazurowski
 ### For *The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning* (MICCAI 2022)
+
+[![arXiv Paper](https://img.shields.io/badge/arXiv-2207.02797-orange.svg?style=flat)](https://arxiv.org/abs/2207.02797)
 https://arxiv.org/abs/2207.02797
 
 ![Example images from our explored datasets.](figures/data_eg_1row.png)
