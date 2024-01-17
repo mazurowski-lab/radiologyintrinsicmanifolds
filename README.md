@@ -5,6 +5,8 @@
 
 This is the official repository for our MICCAI 2022 paper [*The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning*](https://arxiv.org/abs/2207.02797), where we analyze the intrinsic dimension of medical image datasets, and show how this affects the generalization ability of a neural net trained on the data.
 
+## NEW: check out our new [ICLR 2024 paper and code](https://github.com/mazurowski-lab/intrinsic-properties) which greatly expands on this topic!
+
 ![Example images from our explored datasets.](figures/data_eg_1row.png)
 
 ## Code Usage/ Reproducing the Results
