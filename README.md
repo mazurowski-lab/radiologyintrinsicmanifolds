@@ -3,7 +3,7 @@
 
 [![arXiv Paper](https://img.shields.io/badge/arXiv-2207.02797-orange.svg?style=flat)](https://arxiv.org/abs/2207.02797)
 
-This is the official repository for our MICCAI 2022 paper [*The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning*](https://arxiv.org/abs/2207.02797), where we analyze the intrinsic dimension of medical image datasets, and show how this affects the generalization ability of a neural net trained on the data.
+This is the official repository for our MICCAI 2022 paper [*The Intrinsic Manifolds of Radiological Images and their Role in Deep Learning*](https://arxiv.org/abs/2207.02797), where we analyze the intrinsic dimension of medical image datasets, and show how this affects the generalization ability of a neural net trained on the data. Also check out our [poster](https://nickk124.github.io/assets/pdf/miccai22_intrinsicmanifolds_poster.pdf) for more info.
 
 ## NEW: check out our new [ICLR 2024 paper and code](https://github.com/mazurowski-lab/intrinsic-properties) which greatly expands on this topic!
 
